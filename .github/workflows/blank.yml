@@ -17,5 +17,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/
+            cd /home/ubuntu/testci
             ./runme.sh
