@@ -17,5 +17,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/
-            echo "hi" > pp.txt 
+            cd /home/cdpipe/cicd
+            git fetch && git reset origin/main --hard
